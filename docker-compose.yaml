@@ -8,7 +8,7 @@ services:
     volumes:
       - ./uptime-kuma:/app/data
     ports:
-      - "3001:3001"
+      - "8200:3001"
     restart: unless-stopped  
 
     
