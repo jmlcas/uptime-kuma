@@ -1,6 +1,6 @@
 # uptime-kuma
 Uptime-Kuma - Docker-compose
 
-Ver en "localhost:3001"
+Ver en "localhost:8200"
 
 
