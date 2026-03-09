@@ -1,12 +1,15 @@
 services:
 
   uptime-kuma:
-    image: louislam/uptime-kuma:latest
+    image: louislam/uptime-kuma:2
     container_name: uptime-kuma
     volumes:
       - ./uptime-kuma:/app/data
     ports:
       - "8200:3001"
-    restart: unless-stopped  
-
-    
+    restart: unless-stopped    
+    environment:
+      - TZ=Europe/Madrid
+      - ADMIN_EMAIL=admin@gmail.com
+      - ADMIN_PASSWORD=p4ssw0rd
+      
